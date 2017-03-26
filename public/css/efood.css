@@ -1,0 +1,15 @@
+.error-div{
+	1px solid #dd4b39;
+}
+
+ @font-face {
+                font-family: 'Playball';
+                src: url('/fonts/Playball-Regular.ttf')
+            }
+
+      .titulo{
+        font-family: 'Playball', cursive;
+        color: #fff;
+        font-size: 50px;
+        font-weight: 100;
+      }
