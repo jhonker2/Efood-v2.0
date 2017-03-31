@@ -22,13 +22,13 @@
                                         <i class="material-icons">more_vert</i>
                                     </a>
                                     <ul class="dropdown-menu pull-right">
-                                        <li><a href="javascript:void(0);" id="new_usuario">Nuevo Usuario</a></li>
+                                        <li><a href="javascript:void(0);" id="new_producto">Nuevo Producto</a></li>
                                     </ul>
                                 </li>
                             </ul>
                         </div>
-                        <div class="body" id="tusuario">
-                             
+                        <div class="body" id="tproducto">
+                             @include('tablas.tablaproducto')
                         </div>
                     </div>
                 </div>
@@ -41,7 +41,7 @@
 
     <!-- Modal Dialogs ====================================================================================================================== -->
             <!-- Default Size -->
-            <div class="modal fade" id="ModalUsuario" tabindex="-1" role="dialog">
+            <div class="modal fade" id="ModalProducto" tabindex="-1" role="dialog">
                 <div class="modal-dialog" role="document">
                     {!!Form::open(['files'=>true, 'id'=>'form-usuario'])!!}
                     <input  type="hidden" name="_token" value="{{ csrf_token() }}" id="token">

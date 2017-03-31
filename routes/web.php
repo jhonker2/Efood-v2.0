@@ -33,4 +33,6 @@ Route::group(['middleware' => ['web']], function () {
 	Route::resource('producto','ProductoController');
 
 });
+
+
 Route::get('/lista_usuarios','UsuariosController@lista');
