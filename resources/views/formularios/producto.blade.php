@@ -43,60 +43,65 @@
             <!-- Default Size -->
             <div class="modal fade" id="ModalProducto" tabindex="-1" role="dialog">
                 <div class="modal-dialog" role="document">
-                    {!!Form::open(['files'=>true, 'id'=>'form-usuario'])!!}
+                    {!!Form::open(['files'=>true, 'id'=>'form-producto'])!!}
                     <input  type="hidden" name="_token" value="{{ csrf_token() }}" id="token">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h4 class="modal-title" id="defaultModalLabel">Nuevo Usuario</h4>
+                            <h4 class="modal-title" id="defaultModalLabel">Nuevo Producto</h4>
                         </div>
                         <div class="modal-body">
 
                             <div class="row clearfix">
                                     <div class="col-md-6">
-                                        <b>Nombre</b>
+                                        <b>Descripcion</b>
                                         <div class="input-group">
                                             <span class="input-group-addon">
-                                                <i class="material-icons">person</i>
+                                                <i class="material-icons">content_paste</i>
                                             </span>
                                             <div class="form-line">
-                                                <input type="text" name="nombre" class="form-control">
+                                                <input type="text" name="descripcion" class="form-control">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
-                                        <b>Nombre de usuario:</b>
+                                        <b>Precio:</b>
                                         <div class="input-group">
                                             <span class="input-group-addon">
-                                                <i class="material-icons">person</i>
+                                                <i class="material-icons">attach_money</i>
                                             </span>
                                             <div class="form-line">
-                                                <input type="text" name="nomUsuario" class="form-control">
+                                                <input type="text" name="precio" class="form-control">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
-                                        <b>Contraseña:</b>
+                                        <b>Maneja Iva:</b>
+                                        <div class="input-group demo-radio-button">
+                                            <input name="group4" type="radio" id="radio_7" class="radio-col-red"/>
+                                            <label for="radio_7">SI</label>
+                                            <input name="group4" type="radio" id="radio_8" class="radio-col-pink" />
+                                            <label for="radio_8">NO</label>
+                                        </div>
+                                    </div>
+                                   <div class="col-md-6">
+                                        <b>Cantidad:</b>
                                         <div class="input-group">
                                             <span class="input-group-addon">
-                                                <i class="material-icons">vpn_key</i>
+                                                <i class="material-icons">trending_up</i>
                                             </span>
                                             <div class="form-line">
-                                                <input type="password" name="clave" class="form-control" >
+                                                <input type="text" name="precio" class="form-control">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
-                                        <b>Tipo de Usuario:</b>
+                                        <b>Stock Min:</b>
                                         <div class="input-group">
                                             <span class="input-group-addon">
-                                                <i class="material-icons">record_voice_over</i>
+                                                <i class="material-icons">trending_up</i>
                                             </span>
                                             <div class="form-line">
-                                                <select  name="tipo" class="form-control show-tick">
-                                                    <option value="">-- Please select --</option>
-                                                    <option value="Administrador">ADMINISTRADOR</option>
-                                                    <option value="Mesero">MESERO</option>
-                                                </select>
+                                                <input type="text" name="precio" class="form-control">
                                             </div>
                                         </div>
                                     </div>
@@ -105,7 +110,7 @@
                                 </div>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" onclick="registrar_usuario()" class="btn btn-link waves-effect">GUARDAR USUARIO</button>
+                            <button type="button" onclick="registrar_usuario()" class="btn btn-link waves-effect">GUARDAR PRODUCTO</button>
                             <button type="button" class="btn btn-link waves-effect" data-dismiss="modal">CANCELAR</button>
                         </div>
                     </div>
