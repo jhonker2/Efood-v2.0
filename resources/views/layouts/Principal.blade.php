@@ -319,7 +319,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="javascript:void(0);" class="menu-toggle">
+                        <a href="/producto" class="menu-toggle">
                             <i class="material-icons">widgets</i>
                             <span>Productos</span>
                         </a>

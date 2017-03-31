@@ -30,7 +30,7 @@ Route::group(['middleware' => ['web']], function () {
 	Route::resource('home','HomerController');
 
 	Route::resource('usuario','UsuariosController');
-	
+	Route::resource('producto','ProductoController');
 
 });
 Route::get('/lista_usuarios','UsuariosController@lista');
