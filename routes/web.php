@@ -31,6 +31,11 @@ Route::group(['middleware' => ['web']], function () {
 
 	Route::resource('usuario','UsuariosController');
 	Route::resource('producto','ProductoController');
+	Route::resource('cliente','ClienteController');
+
 
 });
 Route::get('/lista_usuarios','UsuariosController@lista');
+//listar clientes
+Route::get('/lista_Clientes','ClienteController@listarClientes');
+//fin listar clientes

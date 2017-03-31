@@ -371,7 +371,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="javascript:void(0);" class="menu-toggle">
+                        <a href="/cliente" class="menu-toggle">
                             <i class="material-icons">assignment</i>
                             <span>Clientes</span>
                         </a>

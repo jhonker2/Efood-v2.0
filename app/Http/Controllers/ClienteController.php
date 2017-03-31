@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\persona;
 
 class ClienteController extends Controller
 {
@@ -12,8 +13,16 @@ class ClienteController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
+
+    {   
+        $clientes = persona::all();
+        return view('formularios.clientes', compact("clientes"));
+    }
+
+    public function listarClientes()
     {
-        //
+     $clientes =persona::all();
+     return view('tablas.tablaCliente',compact("clientes"));
     }
 
     /**
