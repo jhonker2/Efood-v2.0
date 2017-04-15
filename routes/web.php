@@ -25,17 +25,27 @@ Route::group(['middleware' => ['web']], function () {
     		 return Redirect::to('home');
     	}
     });
+    
 	Route::post('logeo',array('as'=>'login', 'uses'=>'LoginController@store'));
 	Route::get('logout','LoginController@logout');
 	Route::resource('home','HomerController');
 
 	Route::resource('usuario','UsuariosController');
 	Route::resource('producto','ProductoController');
-	Route::resource('cliente','ClienteController');
+	
+	
 
 
 });
+//listar usuarios
 Route::get('/lista_usuarios','UsuariosController@lista');
+//fin listar usuarios
+
+//RUTAS CLIENTES
+Route::resource('cliente','ClienteController');
 //listar clientes
 Route::get('/lista_Clientes','ClienteController@listarClientes');
-//fin listar clientes
+
+//buscar clientes
+route::get('/Buscarcliente/{cedula}','ClienteController@search_cliente');
+//FIN RUTAS CLIENTES
